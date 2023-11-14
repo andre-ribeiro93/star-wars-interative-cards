@@ -1,0 +1,436 @@
+@import url('https://fonts.cdnfonts.com/css/soloist');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+body {
+    background-image: url('../assets/space-bg.jpg');
+    background-size:cover;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.logo {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40%;
+    height: auto;
+}
+
+.logo-text {
+    font-family: 'Soloist', sans-serif;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+a {
+    transition: 0.5s;
+}
+
+a:hover {
+    color: goldenrod;
+    transform: scale(1.05);
+}
+
+.social-media {
+    width: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+i:hover {
+    color: goldenrod;
+    transform: scale(1.1);
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+h2 {
+    font-family: 'Soloist', sans-serif;
+    margin-bottom: 25px;
+    color: goldenrod;
+    font-weight: 300;
+    text-align: center;
+    line-height: 30px;
+}
+
+.main-content {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 0 20px;
+}
+
+.cards {
+    width: 340px;
+    height: 470px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.cards:hover {
+    transform: scale(1.02);
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.movie-name-bg {
+    width: 100%;
+    height: 45px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.movie-name {
+    font-family: 'Soloist', sans-serif;
+    text-align: center;
+    padding: 20px;
+    color: goldenrod;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+    margin: 40px 0 20px 0;
+}
+
+.footer-logo {
+    font-family: 'Soloist', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.copyrigth {
+    font-weight: 500;
+}
+
+.modal {
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+}
+
+.modal-buttons {
+    width: 430px;
+    display: flex;
+    align-items: left;
+    margin: 0 0 10px 30px;
+}
+
+button {
+    width: 95px;
+    height: 25px;
+    background-color: goldenrod;
+    color: #000;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #051a38;
+    color: goldenrod;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+#return-button {
+    width: 30px;
+}
+
+.modal-content {
+    width: 430px;
+    height: 640px;
+    background-color: #051a38;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.movie-name-modal {
+    font-family: 'Soloist', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    color: goldenrod;
+}
+
+.movie-image {
+    width: 150px;
+    height:150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+
+.movie-details {
+    font-family: 'Soloist', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    color: goldenrod;
+}
+
+.synopsis {
+    font-family: sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.2rem;
+    color: goldenrod;
+}
+
+.elements-container {
+    width: 430px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.element-content {
+    width: 90px;
+    height: 150px;
+    align-content: center;
+    text-align: center;
+}
+
+.element-image {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+
+.element-name {
+    font-family: 'Soloist', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    color: goldenrod;
+}
+
+#previous-button {
+    display: none;
+    width: 30px;
+}
+
+#previous-button:hover {
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    background-color: goldenrod;
+    transform: scale(1.1);
+}
+
+#next-button {
+    display: none;
+    width: 30px;
+}
+
+#next-button:hover {
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    background-color: goldenrod;
+    transform: scale(1.1);
+}
+
+.page-buttons {
+    display: flex;
+    margin-top: 620px ;
+    position: absolute;
+}
+
+.loading-animation {
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(206, 162, 162, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 8px solid rgba(0, 0, 0, 0.5);
+    border-top: 8px solid goldenrod;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+
+.spinner-card {
+    width: 30px;
+    height: 30px;
+    border: 7px solid rgba(235, 194, 90, 0.3);
+    border-top: 7px solid goldenrod;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-top: 580px;
+    position: absolute;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@media (max-width: 480px) {
+
+    .logo {
+        width: 250px;
+    }
+
+    .modal-content {
+        width: 370px;
+        height: 630px;
+        padding: 30px 15px;
+    }
+
+    .modal-buttons {
+        width: 360px;
+    }
+
+    .movie-image{
+        width: 110px;
+        height: 110px;
+        margin-bottom: 5px;
+    }
+
+    .elements-container {
+        width: 360px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .logo {
+        width: 200px;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content {
+        width: 300px;
+        height: 510px;
+        row-gap: 10px;
+        padding: 10px;
+    }
+
+    .modal-buttons {
+        width: 300px;
+    }
+
+    .movie-image{
+        height: 0;
+        margin-bottom: 0;
+    }
+
+    .synopsis {
+        font-size: 15px;
+    }
+
+    .elements-container {
+        width: 300px;
+    }
+
+    .element-content {
+        width: 70px;
+        height: 150px;
+    }
+    
+    .element-image {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .element-name {
+        font-size: 9px;
+    } 
+
+    .page-buttons {
+        margin-top: 500px;
+    }
+
+    .spinner-card {
+        margin-top: 460px;
+    }
+}

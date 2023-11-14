@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Species | By André Ribeiro</title>
+    <link rel="stylesheet" href="../css/styleSpecies.css">
+    <link rel="shortcut icon" href="../assets/storm-trooper.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <a href="../index.html">
+            <div class="logo">
+                <img src="../assets/star-wars-logo.png" alt="logo" class="logo-img">
+                <span class="logo-text">Home</span>
+            </div>
+        </a>
+
+        <div class="social-media">
+
+            <a href="https://github.com/andre-ribeiro93" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/andr%C3%A9-ribeiro-a22139237/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            
+        </div>
+    </header>
+
+    <div id="loading-animation" class="loading-animation">
+
+        <div class="spinner"></div>
+        
+    </div>
+
+    <div class="main-container">
+        <h2>Conheça todas as raças</h2>
+
+        <div class="main-content" id="main-content"></div>
+
+        <div class="modal" id="modal" onclick="hideModal()"> <!--essa ativação por click poderia ser feita em 'js' como foi feito nos botões próximo e anterior-->
+
+            <div class="modal-content" id="modal-content"></div>
+
+            <div id="spinner-card" class="spinner-card"></div>
+            
+        </div>
+
+        <div class="buttons">
+            <button id="back-button" disabled>Anterior</button>
+
+            <div>
+
+                <button class="page-buttons" id="page-1">1</button>
+                <button class="page-buttons" id="page-2">2</button>
+                <button class="page-buttons" id="page-3">3</button>
+                <button class="page-buttons" id="page-4">4</button>
+                
+            </div>
+
+            <button id="next-button" disabled>Próxima</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p class="footer-logo">Star Wars Universe</p>
+        <p class="copyrigth"> Desenvolvido por &copy; André Ribeiro</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/93c03e748a.js" crossorigin="anonymous"></script>
+    <script src="../JavaScript/scriptSpecies.js"></script>
+</body>
+</html>

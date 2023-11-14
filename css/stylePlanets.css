@@ -1,0 +1,403 @@
+@import url('https://fonts.cdnfonts.com/css/soloist');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+body {
+    background-image: url('../assets/space-bg.jpg');
+    background-size:cover;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.logo {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40%;
+    height: auto;
+}
+
+.logo-text {
+    font-family: 'Soloist', sans-serif;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+a {
+    transition: 0.5s;
+}
+
+a:hover {
+    color: goldenrod;
+    transform: scale(1.05);
+}
+
+.social-media {
+    width: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+i:hover {
+    color: goldenrod;
+    transform: scale(1.1);
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+h2 {
+    font-family: 'Soloist', sans-serif;
+    margin-bottom: 25px;
+    color: goldenrod;
+    font-weight: 300;
+    text-align: center;
+    line-height: 30px;
+}
+
+.main-content {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 0 20px;
+}
+
+.cards {
+    width: 230px;
+    height: 470px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.cards:hover {
+    transform: scale(1.02);
+}
+
+.planet-name-bg {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.planet-name {
+    font-family: 'Soloist', sans-serif;
+    color: goldenrod;
+}
+
+.not-found-text {
+    width: 230px;
+    height: 250px;
+    text-align: center;
+    font-family: 'Soloist', sans-serif;
+    text-shadow: 0 0 5px #000;
+    color: #fff;
+    position: absolute;
+}
+
+.buttons {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.page-buttons {
+    width: 25px;
+    height: 25px;
+}
+
+button {
+    width: 70px;
+    height: 25px;
+    background-color: goldenrod;
+    color: #000;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #000;
+    color: goldenrod;
+}
+
+#back-button {
+    visibility: hidden;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+    margin: 40px 0 20px 0;
+}
+
+.footer-logo {
+    font-family: 'Soloist', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.copyrigth {
+    font-weight: 500;
+}
+
+.modal {
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+}
+
+.modal-buttons {
+    width: 430px;
+    display: flex;
+    align-items: left;
+    margin: 0 0 10px 30px;
+}
+
+#return-button {
+    width: 30px;
+    margin-right: 10px;
+}
+
+#return-button:hover {
+    background-color: #051a38;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#characters-button {
+    width: 150px;
+}
+
+#characters-button:hover {
+    background-color: #051a38;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+    width: 430px;
+    height: 600px;
+    background-color: #051a38;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.planet-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+
+.planet-details {
+    font-family: 'Soloist', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    color: goldenrod;
+}
+
+.characters-container {
+    width: 430px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.characters-content {
+    width: 90px;
+    height: 150px;
+    align-content: center;
+    text-align: center;
+}
+
+.characters-image {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+
+.characters-name {
+    font-family: 'Soloist', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    color: goldenrod;
+}
+
+.loading-animation {
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 8px solid rgba(0, 0, 0, 0.5);
+    border-top: 8px solid goldenrod;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.spinner-card {
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+    border: 7px solid rgba(235, 194, 90, 0.3);
+    border-top: 7px solid goldenrod;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-top: 550px;
+    position: fixed;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@media (max-width: 480px) {
+
+    .logo {
+        width: 250px;
+    }
+    
+    .buttons {
+        width: 90%;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .modal-content {
+        width: 360px;
+        height: 630px;
+    }
+
+    .characters-container {
+        width: 360px;
+    }
+
+    .modal-buttons {
+        width: 360px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .logo {
+        width: 200px;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content {
+        width: 300px;
+        height: 500px;
+    }
+
+    .characters-container {
+        width: 300px;
+    }
+
+    .modal-buttons {
+        width: 300px;
+    }
+
+    .planet-image {
+        height: 0;
+    }
+
+    .characters-content {
+        width: 70px;
+        height: 150px;
+    }
+    
+    .characters-image {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .characters-name {
+        font-size: 9px;
+    }
+
+    .spinner-card {
+        margin-top: 460px;
+    }
+}
