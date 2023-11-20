@@ -11,7 +11,6 @@
 }
 
 body {
-
     background-image: url('../assets/space-bg.jpg');
     background-size:cover;
 }
@@ -262,6 +261,12 @@ footer {
 }
 
 @media (max-width: 480px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('../assets/Background_alternativo.png');
+    }
 
     .logo {
         width: 250px;
