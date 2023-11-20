@@ -27,3 +27,17 @@ Este projeto teve como objetivo criar um site que exibe informações sobre pers
 
 ## Funcionalidades
 
+A aplicação possui uma página inicial que da acesso 4 páginas (personagens, raças, planetas e filmes) distintas contendo cards que exibem informações sobre o universo de Star Wars ao clicar sobre os mesmos. Para fechar os cards basta clicar em qualquer lugar da tela:
+
+
+Ao exibir os cards de informações dos planetas e filmes será possível notar abas superiores que irão exibir algumas informações adicionais ao serem clicadas, como por exemplo 'nativos do planeta':
+
+
+Para voltar a pagina inicial basta clicar no 'Home' presente no canto superior esquerdo:
+
+
+Algumas abas dos cards possuem botões de navegação para exibição de mais conteúdo:
+
+
+As páginas da aplicação também possuem botões de navegação na parte inferiror:
+
