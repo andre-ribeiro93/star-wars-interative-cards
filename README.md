@@ -1,6 +1,6 @@
 # star-wars-interative-cards
 
-Este projeto teve como objetivo criar um site que exibe informações sobre personagens, espécies, planetas e os 6 primeiros filmes da franquia Star Wars, utilizando a API pública https://swapi.dev para obter os dados dos cards e o site https://starwars-visualguide.com para as imagens exibidas.
+Este projeto teve como objetivo criar uma aplicação que exibe informações sobre personagens, espécies, planetas e os 6 primeiros filmes da franquia Star Wars, utilizando a API pública https://swapi.dev para obter os dados dos cards e o site https://starwars-visualguide.com para as imagens exibidas.
 
 ## Tecnologias empregadas
 
